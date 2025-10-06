@@ -94,3 +94,30 @@ function handleSwipe() {
     }
 }
 
+function toggleMobileMenu() {
+    const mobileNav = document.querySelector('.mobile-nav');
+    mobileNav.classList.toggle('active');
+}
+
+function closeMobileMenu() {
+    const mobileNav = document.querySelector('.mobile-nav');
+    mobileNav.classList.remove('active');
+}
+
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scrolling down and past 100px
+        header.classList.add('hidden');
+    } else {
+        // Scrolling up or at top
+        header.classList.remove('hidden');
+    }
+
+    lastScrollTop = scrollTop;
+});
+

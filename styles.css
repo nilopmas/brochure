@@ -33,18 +33,21 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0 2rem 1rem;
+    padding: 1rem 2rem;
     background: #4D8BFF;
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 60px;
+    justify-content: space-between;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+header.hidden {
+    transform: translateY(-100%);
 }
 
 .header-left {
-    position: absolute;
-    left: 2rem;
     display: flex;
     align-items: center;
 }
@@ -71,9 +74,9 @@ header {
 
 #hero {
     text-align: center;
-    padding: 0 2rem;
-    margin-top: 60px;
-    min-height: calc(100vh - 60px);
+    padding: 4rem 2rem 2rem;
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,7 +108,7 @@ section {
     background: white;
     margin: 2rem 0;
     padding: 2rem;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 100px;
 }
 
 h2 {
@@ -269,22 +272,69 @@ audio::-webkit-media-controls-seek-forward-button {
 
 footer {
     text-align: center;
-    padding: 0 2rem;
+    padding: 0 2rem 2rem;
     background: #ffffff;
     color: #575757;
     margin-top: 2rem;
 }
 
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 1px;
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #4D8BFF;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 999;
+}
+
+.mobile-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+}
+
+.mobile-nav a:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav.active {
+    display: flex;
+}
+
 @media (max-width: 768px) {
     header {
-        padding: 0 1rem 1rem;
-        height: 50px;
-        justify-content: flex-start;
+        padding: 1rem;
+        height: 70px;
     }
 
     .header-left {
-        position: relative;
-        left: 0;
+        left: 1rem;
     }
 
     .mythmaker-logo {
@@ -292,18 +342,21 @@ footer {
     }
 
     .header-nav {
-        gap: 0.5rem;
-        margin-left: 1rem;
+        display: none;
     }
 
-    .header-nav a {
-        padding: 0.3rem 0.5rem;
-        font-size: 0.75rem;
+    .mobile-menu-toggle {
+        display: flex;
+        right: 1rem;
+    }
+
+    .mobile-nav {
+        top: 70px;
     }
 
     #hero {
-        margin-top: 50px;
-        min-height: calc(100vh - 50px);
+        margin-top: 70px;
+        min-height: calc(100vh - 70px);
     }
 
     #hero h1 {
@@ -335,6 +388,6 @@ footer {
 
     section {
         padding: 1rem;
-        scroll-margin-top: 60px;
+        scroll-margin-top: 90px;
     }
 }
