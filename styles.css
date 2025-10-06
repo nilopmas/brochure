@@ -39,7 +39,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
     transition: transform 0.3s ease;
 }
 
@@ -74,9 +74,9 @@ header.hidden {
 
 #hero {
     text-align: center;
-    padding: 4rem 2rem 2rem;
-    margin-top: 80px;
-    min-height: calc(100vh - 80px);
+    padding: 1rem 2rem 2rem;
+    margin-top: 60px;
+    min-height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,7 +301,7 @@ footer {
 .mobile-nav {
     display: none;
     position: fixed;
-    top: 80px;
+    top: 60px;
     left: 0;
     right: 0;
     background: #4D8BFF;
@@ -329,7 +329,7 @@ footer {
 @media (max-width: 768px) {
     header {
         padding: 1rem;
-        height: 70px;
+        height: 55px;
     }
 
     .header-left {
@@ -350,12 +350,12 @@ footer {
     }
 
     .mobile-nav {
-        top: 70px;
+        top: 55px;
     }
 
     #hero {
-        margin-top: 70px;
-        min-height: calc(100vh - 70px);
+        margin-top: 55px;
+        min-height: calc(100vh - 55px);
     }
 
     #hero h1 {
