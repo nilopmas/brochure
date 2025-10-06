@@ -32,9 +32,19 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 1rem;
-    background: #ffffff;
+    right: 0;
+    padding: 1rem 2rem;
+    background: #4D8BFF;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
 }
 
 .mythmaker-logo {
@@ -42,11 +52,30 @@ header {
     width: auto;
 }
 
+.header-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.header-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 #hero {
     text-align: center;
     padding: 4rem 2rem;
-    margin-top: 4rem;
-    min-height: calc(100vh - 4rem);
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +86,6 @@ header {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     color: #575757;
 }
 
@@ -84,7 +112,7 @@ section {
 h2 {
     font-size: 2rem;
     margin-bottom: 0;
-    text-align: center;
+    text-align: left;
     color: #575757;
 }
 
@@ -99,7 +127,6 @@ h2 {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-slide {
@@ -219,7 +246,6 @@ h2 {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 audio::-webkit-media-controls-panel {
@@ -235,6 +261,25 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        padding: 1rem;
+        height: 70px;
+    }
+
+    .header-nav {
+        gap: 1rem;
+    }
+
+    .header-nav a {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    #hero {
+        margin-top: 70px;
+        min-height: calc(100vh - 70px);
+    }
+
     #hero h1 {
         font-size: 2rem;
     }
