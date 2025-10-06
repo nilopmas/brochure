@@ -75,8 +75,8 @@ header.hidden {
 #hero {
     text-align: center;
     padding: 1rem 2rem 2rem;
-    margin-top: 60px;
-    min-height: calc(100vh - 60px);
+    margin-top: 30px;
+    min-height: calc(100vh - 30px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -354,8 +354,8 @@ footer {
     }
 
     #hero {
-        margin-top: 55px;
-        min-height: calc(100vh - 55px);
+        margin-top: 25px;
+        min-height: calc(100vh - 25px);
     }
 
     #hero h1 {
