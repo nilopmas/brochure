@@ -108,7 +108,6 @@ section {
     background: white;
     margin: 2rem 0;
     padding: 2rem;
-    scroll-margin-top: 100px;
 }
 
 h2 {
@@ -388,6 +387,5 @@ footer {
 
     section {
         padding: 1rem;
-        scroll-margin-top: 90px;
     }
 }
