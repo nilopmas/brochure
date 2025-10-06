@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accel - Premium Earphones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Accel</h1>
+        <p>Premium Earphones Handcrafted for Excellence</p>
+    </header>
+
+    <main>
+        <section id="product-showcase">
+            <h2>Product Gallery</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide active">
+                        <img src="gallery/accel-main.jpg" alt="Accel Main View">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="gallery/accel-front.jpg" alt="Accel Front View">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="gallery/accel-rear.jpg" alt="Accel Rear View">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="gallery/accel-cable.jpg" alt="Accel Cable Detail">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="gallery/accel-plug.jpg" alt="Accel Plug Detail">
+                    </div>
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(-1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(1)">›</button>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="music-showcase">
+            <h2>Experience Accel with idolm@ster</h2>
+            <p>Listen to 30-second previews and experience the clarity of Accel earphones</p>
+            <div class="music-grid">
+                <div class="music-card">
+                    <img src="music/illusionista/albumart.jpg" alt="イリュージョニスタ! Album Art">
+                    <h3>イリュージョニスタ!</h3>
+                    <audio controls>
+                        <source src="music/illusionista/04 - イリュージョニスタ! (Game Version).flac" type="audio/flac">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="music-card">
+                    <img src="music/nation-blue/albumart.jpg" alt="Nation Blue Album Art">
+                    <h3>Nation Blue</h3>
+                    <audio controls>
+                        <source src="music/nation-blue/01 - Nation Blue.flac" type="audio/flac">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Accel. Handcrafted with passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
