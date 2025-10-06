@@ -50,7 +50,7 @@ header {
 }
 
 .mythmaker-logo {
-    height: 1.8rem;
+    height: 1.5rem;
     width: auto;
 }
 
@@ -66,16 +66,11 @@ header {
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.header-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
 #hero {
     text-align: center;
-    padding: 0 2rem 4rem;
+    padding: 0 2rem;
     margin-top: 80px;
     min-height: calc(100vh - 80px);
     display: flex;
@@ -209,7 +204,6 @@ h2 {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
-    transition: transform 0.3s ease;
 }
 
 .music-card-image {
@@ -239,9 +233,6 @@ h2 {
     width: 100%;
 }
 
-.music-card:hover {
-    transform: translateY(-5px);
-}
 
 .music-card-image img {
     width: 100%;
@@ -252,6 +243,19 @@ h2 {
 
 audio::-webkit-media-controls-panel {
     background-color: #4D8BFF;
+    color: white;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: white;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+    filter: invert(1);
 }
 
 footer {
@@ -268,13 +272,21 @@ footer {
         height: 70px;
     }
 
+    .header-left {
+        left: 1rem;
+    }
+
+    .mythmaker-logo {
+        height: 1.2rem;
+    }
+
     .header-nav {
         gap: 1rem;
     }
 
     .header-nav a {
-        padding: 0.3rem 0.8rem;
-        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
     }
 
     #hero {
