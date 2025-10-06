@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a static marketing website for "Accel" premium earphones, showcasing product images in a carousel and featuring an idolm@ster music gallery. The site is built with vanilla HTML, CSS, and JavaScript for deployment on GitHub Pages.
+This is a static marketing website for "Accel" premium earphones, showcasing product images in a carousel and featuring The IDOLM@STER music gallery. The site is built with vanilla HTML, CSS, and JavaScript for deployment on GitHub Pages.
 
 ## Brand Guidelines
 
@@ -12,6 +12,7 @@ This is a static marketing website for "Accel" premium earphones, showcasing pro
 - **Secondary Color**: #FE9E64 (orange)
 - **Accent Grey**: #575757
 - **Standard Colors**: Black and white are welcomed
+- **Primary Font**: Noto Sans SC
 
 ## Architecture
 
